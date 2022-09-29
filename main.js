@@ -6,10 +6,12 @@ const actualPrices = [
   { cooler: 57 },
   { hairdryer: 14 },
   { table: 130 },
-  { basketball: 70 },
+  { basketball: 80 },
   { waterbottle: 40 },
   { lights: 16 },
 ];
+
+let score = 0;
 
 // if guess is within 5% of price
 function priceIsRight(guess, actual) {
@@ -19,10 +21,21 @@ function priceIsRight(guess, actual) {
   let maxRange = (1 + deviationPercent) * actual;
   // set range from 95% of actual and 105% of actual
   // if guess is greater than 95% of actual but less than 105% of actual, return correct
-  if (guess > minRange && guess < maxRange) return "correct";
+  if (guess > minRange && guess < maxRange) {
+    score += 1;
+    let scoreCount = document.createElement('p');
+    let scoreHTML = document.getElementById('score');
+    scoreHTML.append(scoreCount);
+    scoreHTML.value = 0;
+
+  }
   // else return wrong
-  else return "wrong";
+  else {
+    //loser sound?
+  };
 }
+
+
 
 // create element in document
 // document.querySelector("");
@@ -41,7 +54,7 @@ playGameBtn.addEventListener("click", () => {
   var imgContainer = document.getElementById("imgContainer");
   var img = document.createElement("image");
   img.setAttribute("id", "image");
-  img.setAttribute("src", "./amazonimages/basketball.jpg");
+  img.setAttribute("src", "./amazonimages/basketball.png");
   img.setAttribute("alt", "this is where the img should showup");
   imgContainer.appendChild(img);
 
@@ -65,9 +78,19 @@ playGameBtn.addEventListener("click", () => {
 
 const guessBtn = document.getElementById("guess");
 guessBtn.addEventListener("click", () => {
-  console.log("pressed guess");
+  window.open(
+    'https://www.amazon.com/Wilson%C2%AE-Evolution%C2%AE-Indoor-Basketball-EA/dp/B0009KMXWY/ref=sr_1_2?crid=1LEO1UKC105ZW&keywords=wilson%2Bbasketball&qid=1664474247&qu=eyJxc2MiOiI1LjYzIiwicXNhIjoiNS40NCIsInFzcCI6IjUuMjEifQ%3D%3D&sprefix=wilson%2Bbasketball%2Caps%2C85&sr=8-2&th=1&psc=1',
+    '_blank'
+  );
+  var audio = new Audio('ugh.mp3');
+  audio.play(); 
+  img.removeAttribute(src)
+  img.setAttribute("src", "./amazonimages/bookbag1.jpg");
   // priceIsRight(input, // prices we've stored)
+  // needs to redirect with target.
 });
+
+
 
 // const guessBtn = document.getElementById("guess");
 // guessBtn.addEventListener("keydown", (e) => {
