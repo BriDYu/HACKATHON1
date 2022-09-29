@@ -65,7 +65,8 @@ playGameBtn.addEventListener("click", () => {
 
 const guessBtn = document.getElementById("guess");
 guessBtn.addEventListener("click", () => {
-  console.log("pressed guess");
+  window.location.href =
+    "https://www.amazon.com/Wilson%C2%AE-Evolution%C2%AE-Indoor-Basketball-EA/dp/B0009KMXWY/ref=sr_1_6?crid=1L9N2L5Z64EDW&keywords=basketball&qid=1664413866&qu=eyJxc2MiOiI3LjM1IiwicXNhIjoiNi45MCIsInFzcCI6IjYuNjIifQ%3D%3D&sprefix=basketball%2Caps%2C111&sr=8-6";
   // priceIsRight(input, // prices we've stored)
 });
 

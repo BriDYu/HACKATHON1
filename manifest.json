@@ -1,20 +1,20 @@
 {
-  "name": "Getting Started Example",
+  "name": "LETS PLAY THE PRICE IS RIGH!",
   "description": "Build an Extension!",
   "version": "1.0",
   "manifest_version": 3,
   "permissions": ["storage", "activeTab", "scripting"],
   "icons": {
-    "16": "/amazonimages/basketball.jpg",
-    "48": "/amazonimages/basketball.jpg",
-    "128": "/amazonimages/basketball.jpg"
+    "16": "/amazonimages/basketball.png",
+    "48": "/amazonimages/basketball.png",
+    "128": "/amazonimages/basketball.png"
   },
   "action": {
     "default_popup": "index.html",
     "default_icon": {
-      "16": "/amazonimages/basketball.jpg",
-      "48": "/amazonimages/basketball.jpg",
-      "128": "/amazonimages/basketball.jpg"
+      "16": "/amazonimages/basketball.png",
+      "48": "/amazonimages/basketball.png",
+      "128": "/amazonimages/basketball.png"
     }
   }
 }
