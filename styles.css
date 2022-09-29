@@ -1,0 +1,72 @@
+#container {
+  height: 600px;
+  width: 400px;
+  background-color: rgb(248, 237, 132);
+  color: #fff;
+  padding: 10px;
+  border: solid 3px black;
+  position: relative;
+}
+h1 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 16px;
+  letter-spacing: -1.6px;
+  word-spacing: -0.4px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  margin-top: -3px;
+  margin-left: 25px
+  border-radius: 31px 37px 36px;
+  border: 2px solid #000000;
+}
+#container #start {
+  position: absolute;
+  right:    20px;
+  bottom:   20px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 35px;
+  letter-spacing: -1.6px;
+  word-spacing: -0.4px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  margin-bottom: -13px;
+  border: 2px solid #000000;
+}
+#score{
+  margin-top:-7px;
+  color:blue;
+}
+#instructions{
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 16px;
+  color:#000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  margin-top: 100px;
+}
+#container #guess {
+  position: absolute;
+  right:    20px;
+  bottom:   20px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 35px;
+  letter-spacing: -1.6px;
+  word-spacing: -0.4px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  margin-bottom: -13px;
+  border: 2px solid #000000;
+  display: none;
+}
+/* #imgContainer {
+  display:none
+} */
