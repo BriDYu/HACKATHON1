@@ -69,11 +69,14 @@ h1 {
 }
 #imgContainer {
   position:absolute;
-  display:none;
-  width:200px;
-  height:200px;
+  display: none;
+  height:300px;
+  width:300px;
 }
-
+#imgContainer img{
+  height:300px;
+  width:300px;
+}
 #input {
   position: absolute;
   bottom: 0px;

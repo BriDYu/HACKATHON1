@@ -39,11 +39,16 @@ playGameBtn.addEventListener("click", () => {
   var guess = document.getElementById("guess");
   var mainText = document.getElementById("instructions");
   var imgContainer = document.getElementById("imgContainer");
+  var img = document.createElement("image");
+  img.setAttribute("id", "image");
+  img.setAttribute("src", "./amazonimages/basketball.jpg");
+  img.setAttribute("alt", "this is where the img should showup");
+  imgContainer.appendChild(img);
 
   start.style.display = "none";
   mainText.style.display = "none";
   guess.style.display = "inline";
-  imgContainer.display = "inline"; // this is breaking
+  imgContainer.style.display = "inline"; // this is breaking
 
   //set display of instructions to none
   //set display of new Guess button to showup
