@@ -1,0 +1,20 @@
+{
+  "name": "Getting Started Example",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting"],
+  "icons": {
+    "16": "./amazonimages/basketball.jpg",
+    "48": "./amazonimages/basketball.jpg",
+    "128": "./amazonimages/basketball.jpg"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "./amazonimages/basketball.jpg",
+      "48": "./amazonimages/basketball.jpg",
+      "128": "./amazonimages/basketball.jpg"
+    }
+  }
+}

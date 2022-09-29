@@ -1,4 +1,17 @@
-// if guess is within 5% of price,
+const actualPrices = [
+  { bike: 100 },
+  { fan: 20 },
+  { fryingpan: 14 },
+  { bookbag: 36 },
+  { cooler: 57 },
+  { hairdryer: 14 },
+  { table: 130 },
+  { basketball: 70 },
+  { waterbottle: 40 },
+  { lights: 16 },
+];
+
+// if guess is within 5% of price
 function priceIsRight(guess, actual) {
   // if guess is within 5% of actual price (5% above and below), then price is right
   let deviationPercent = 0.15;
@@ -18,23 +31,45 @@ function priceIsRight(guess, actual) {
 
 // document.addEventListener("DOMContentLoaded", () => {
 // document.body.appendChild(playGameBtn);
+function imgProducer() {}
 const playGameBtn = document.getElementById("start");
 playGameBtn.addEventListener("click", () => {
   //set display of start button to none
   var start = document.getElementById("start");
   var guess = document.getElementById("guess");
   var mainText = document.getElementById("instructions");
+  var imgContainer = document.getElementById("imgContainer");
+
   start.style.display = "none";
   mainText.style.display = "none";
   guess.style.display = "inline";
-  // imgContainer.display = "inline";
+  imgContainer.display = "inline"; // this is breaking
+
   //set display of instructions to none
   //set display of new Guess button to showup
   //set display of text field to showup
   //set display of image box to showup
 
+  const input = document.createElement("input");
+  input.setAttribute("type", "number"); // should create <input type = "number" />
+  input.setAttribute("id", "input");
+  container.appendChild(input);
+
   // guess functionality
 });
+
+const guessBtn = document.getElementById("guess");
+guessBtn.addEventListener("click", () => {
+  console.log("pressed guess");
+  // priceIsRight(input, // prices we've stored)
+});
+
+// const guessBtn = document.getElementById("guess");
+// guessBtn.addEventListener("keydown", (e) => {
+//   if (e.code === "Enter") {
+//     console.log("pressed enter");
+//   }
+// });
 
 // populateImage () {
 
@@ -48,5 +83,7 @@ playGameBtn.addEventListener("click", () => {
 // creating textbox to input guesses
 /*
 document.createElement("label")
-
+document.createElement("input")
+input.setAttribute("type", "text");
+document.body.appendChild(input);
 */
